@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main()
+{
+    int x, y, max ,min ;
+    printf(" Enter the values of X and y : ");
+    scanf("%d %d",&x,&y);
+    max = x ^ ((x^y)&-(x<y));
+    min = y ^ ((x^y)&-(x<y));
+    printf("Maximum of Given numbers = %d \n",max);
+    printf("Minimum of Given numbers = %d \n",min);
+}
