@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+    float a,u,t,distance;
+    printf("Enter the acceleration : ");
+    scanf("%f",&a);
+    printf("Enter the initial velocity : ");
+    scanf("%f",&u);
+    printf("Enter the time taken : ");
+    scanf("%f",&t);
+    distance = (u*t) + (0.5 *a*t*t);
+    printf("Distance Travelled : %f",distance);
+}
