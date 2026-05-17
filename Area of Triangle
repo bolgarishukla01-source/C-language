@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int a,b,c,P,area;
+    printf("Enter the values of 3 sides of the triangle : ");
+    scanf("%d %d %d", &a, &b, &c);
+    P = (a+b+c)/2;
+    area = sqrt((P)*(P-a)*(P-b)*(P-c));
+    printf("The area of the triangle is : %d\n" , area);
+}
