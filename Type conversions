@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main()
+{
+    int i, intsum;
+    printf("i = ");
+    scanf("%d",&i);
+    char ch = 'a' ;
+    float floatsum;
+    intsum = i+ch;
+    floatsum = i+ch;
+    printf("Integer result = %d, Float result = %f\n",intsum,floatsum);
+    
+}
+
+
+AND 
+
+
+#include<stdio.h>
+void main()
+{
+    float x,y;
+    x = 7/5;
+    y = (float)7/5;
+    printf("x = %f, y = %f\n",x,y);
+}
+
