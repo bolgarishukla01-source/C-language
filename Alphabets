@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+    char ch;
+    printf("Enter a lower case character : ");
+    scanf("%c",&ch);
+    ch = ch - 32 ;
+    printf("The upper case character is : %c\n",ch);
+}
+
+
+and 
+
+
+#include<stdio.h>
+void main()
+{
+    char ch;
+    printf("Enter a lower case character : ");
+    scanf("%c",&ch);
+    ch = ch + 32 ;
+    printf("The upper case character is : %c\n",ch);
+}
