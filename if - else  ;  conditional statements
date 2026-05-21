@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+  int maths,computer,physics,chemistry,english,spanish,total;
+  float percentage;
+  printf("Enter maths,computer,physics,chemistry,english and spanish  marks : ");
+  scanf("%d %d %d %d %d %d", &maths, &computer, &physics, &chemistry, & english, & spanish);
+  total = maths + computer + physics + chemistry + english +spanish;
+  percentage = (total/600.0f)*100.0f;
+  if (percentage >= 60.0f)
+  {
+    printf("Student secured a first class with %5.2f%%\n",percentage);
+  }else
+  {
+    printf("Student did not secure a first class with %5.2f%%\n", percentage);
+  }
+}
