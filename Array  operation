@@ -1,0 +1,41 @@
+#include <stdio.h> 
+int main() {
+    // 1. Declaration
+    int arr[10] = {10, 20, 30, 40, 50}; 
+    int size = 5;
+    int capacity = 10;
+    // 2. Traversal & Display
+    printf("Original Array: ");
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+    // 3. Updating an element  
+    arr[2] = 99;
+    // 4. Insertion
+    int insertIndex = 1;
+    int newValue = 25;
+    if (size < capacity)
+    {
+        for (int i = size; i > insertIndex; i--)
+        {
+            arr[i] = arr[i - 1];
+        }
+        arr[insertIndex] = newValue;
+        size++; 
+    }
+    // 5. Deletion 
+    int deleteIndex = 3;
+    for (int i = deleteIndex; i < size - 1; i++)
+    {
+        arr[i] = arr[i + 1]; // Shift elements left
+    }
+    size--; 
+    printf("Modified Array: ");
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}
