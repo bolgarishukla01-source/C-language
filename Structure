@@ -1,0 +1,20 @@
+#include <stdio.h>
+struct Book
+{
+    char title[50];
+    char author[50];
+    int pages;
+    float price;
+};
+int main()
+{
+    struct Book book1 = {"The C Programming Language", "Dennis Ritchie", 272, 45.50};
+    printf("Book Details:\n");
+    printf("---------------------------\n");
+    printf("Title:  %s\n", book1.title);
+    printf("Author: %s\n", book1.author);
+    printf("Pages:  %d pages\n", book1.pages);
+    printf("Price:  $%.2f\n", book1.price);
+
+    return 0;
+}
